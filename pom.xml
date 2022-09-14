@@ -108,7 +108,7 @@
 	</distributionManagement>
 	
 	<build>
-		<finalName>maven-web-app</finalName>
+		<finalName>boa-app</finalName>
 		
 		<plugins>
 			<plugin>
