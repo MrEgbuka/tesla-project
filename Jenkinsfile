@@ -23,6 +23,7 @@ node{
   }
   }
     stage('7Deploy2Prod'){
+    sh "sleep 50"
     sh "echo 'Deploy to Production' "
     deploy adapters: [tomcat9(credentialsId: 'tomcat-credentials', path: '', url: 'http://54.193.71.113:8080/')], contextPath: null, war: 'target/*war'
     }
